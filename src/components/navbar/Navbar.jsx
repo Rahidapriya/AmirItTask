@@ -34,9 +34,9 @@ const Navbar = () => {
     }
   };
  
-  const navbarClass = isScrolled ? "fixed top-0 left-0 right-0" : "";
+
   const containerClass = isScrolled ? "py-3" : ""; 
- 
+  const navbarClass = isScrolled ? "fixed top-0 left-0 right-0 bg-white shadow-md" : "";
 
     const navLinks=<>
     <li className=" "><NavLink to="/" className={({ isActive, isPending }) =>
@@ -60,7 +60,7 @@ const Navbar = () => {
     
     </>
     return (
-      <div className=" z-40">
+      <div className=" z-50 ">
         <div className={`drawer z-30 ${containerClass} `}>
       <div className={`drawer z-30 py-3 ${navbarClass}`}>
       <div className="drawer z-30  fixed">
@@ -100,7 +100,7 @@ const Navbar = () => {
                 </ul>
               </div>
               <div className="hidden lg:flex">
-              <button className="px-4 py-2  border-2 example_d ">Get A Quotes</button>
+              <button className="px-4 py-2   border-2 example_d ">Get A Quotes</button>
               </div>
               <div>
                 <ul className="hidden lg:flex gap-2  font-[20px] icon">
