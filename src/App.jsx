@@ -5,6 +5,7 @@ import Navbar from './components/navbar/Navbar'
 import './components/cursorbubble/cursorbubble.js'
 import './components/cursorbubble/cursorbubble.css'
 import AboutUs from './components/aboutus/AboutUs.jsx'
+import Subsection from './components/aboutus/Subsection.jsx'
 function App() {
  
 
@@ -16,6 +17,7 @@ function App() {
      <Navbar></Navbar>
      <Banner></Banner>
      <AboutUs></AboutUs>
+     <Subsection></Subsection>
       
       
     </div>

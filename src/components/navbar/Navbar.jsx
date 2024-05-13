@@ -36,31 +36,31 @@ const Navbar = () => {
  
 
   const containerClass = isScrolled ? "py-3" : ""; 
-  const navbarClass = isScrolled ? "fixed top-0 left-0 right-0 bg-white shadow-md" : "";
+  const navbarClass = isScrolled ? "fixed top-0 left-0 right-0  shadow-md" : "";
 
     const navLinks=<>
     <li className=" "><NavLink to="/" className={({ isActive, isPending }) =>
-                    isPending ? "pending " : isActive ? " text-blue-400 font-bold nav-link nav-link-ltr  px-6 hover:text-red " : "px-6 "
+                    isPending ? "pending " : isActive ? " text-purple-600 font-bold nav-link nav-link-ltr  px-6 hover:text-red " : "px-6 "
                   }>Home</NavLink></li>
     <li><NavLink to="/aboutus" className={({ isActive, isPending }) =>
-                    isPending ? "pending" : isActive ? "text-blue-400 font-bold nav-link nav-link-ltr  px-6  underline-offset-8  hover:text-red   " : "px-6 "
+                    isPending ? "pending" : isActive ? "text-purple-600 font-bold nav-link nav-link-ltr  px-6  underline-offset-8  hover:text-red   " : "px-6 "
                   }>About Us</NavLink></li>
                   <li><NavLink to="/ourworks" className={({ isActive, isPending }) =>
-                    isPending ? "pending" : isActive ? "text-blue-400 font-bold nav-link nav-link-ltr  px-6  underline-offset-8  hover:text-red   " : "px-6 "
+                    isPending ? "pending" : isActive ? "text-purple-600 font-bold nav-link nav-link-ltr  px-6  underline-offset-8  hover:text-red   " : "px-6 "
                   }>Our Works</NavLink></li>
                   <li><NavLink to="/clients" className={({ isActive, isPending }) =>
-                    isPending ? "pending" : isActive ? "text-blue-400 font-bold nav-link nav-link-ltr  px-6  underline-offset-8  hover:text-red   " : "px-6 "
+                    isPending ? "pending" : isActive ? "text-purple-600 font-bold nav-link nav-link-ltr  px-6  underline-offset-8  hover:text-red   " : "px-6 "
                   }>Clients</NavLink></li>
                   <li><NavLink to="/blogs" className={({ isActive, isPending }) =>
-                    isPending ? "pending" : isActive ? "text-blue-400 font-bold nav-link nav-link-ltr  px-6  underline-offset-8  hover:text-red   " : "px-6 "
+                    isPending ? "pending" : isActive ? "text-purple-600 font-bold nav-link nav-link-ltr  px-6  underline-offset-8  hover:text-red   " : "px-6 "
                   }>Our Blogs</NavLink></li>
                   <li><NavLink to="/contact" className={({ isActive, isPending }) =>
-                    isPending ? "pending" : isActive ? "text-blue-400 font-bold nav-link nav-link-ltr  px-6  underline-offset-8  hover:text-red   " : "px-6 "
+                    isPending ? "pending" : isActive ? "text-purple-600 font-bold nav-link nav-link-ltr  px-6  underline-offset-8  hover:text-red   " : "px-6 "
                   }>Contact Us</NavLink></li>       
     
     </>
     return (
-      <div className=" z-50 ">
+      <div className=" z-50  ">
         <div className={`drawer z-30 ${containerClass} `}>
       <div className={`drawer z-30 py-3 ${navbarClass}`}>
       <div className="drawer z-30  fixed">
@@ -92,7 +92,7 @@ const Navbar = () => {
               <div className="flex gap-16">
                <div className="flex  items-center ">
                
-              <div className="  text-2xl font-bold ">DenMark</div>
+              <div className="  text-3xl font-bold text-red-600 ">megaone</div>
                </div>
               <div className="flex-none hidden lg:block">
                 <ul className="flex gap-3">
