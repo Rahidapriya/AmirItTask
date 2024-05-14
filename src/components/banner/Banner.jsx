@@ -17,7 +17,7 @@ const Banner = () => {
   };
   return (
     <div className="pt-10 lg:min-h-screen bg-[#96EFFF] relative ">
-      <div className=" hidden md:block w-[500px] h-[500px] bg-[#5FBDFF] rounded-full   absolute top-[50%] right-0 translate-x-[70%] -translate-y-[50%]"></div>
+      <div className=" hidden md:block w-[500px] h-[500px] bg-pink-500 rounded-full   absolute top-[50%] right-0 translate-x-[70%] -translate-y-[50%]"></div>
       <div className="flex  flex-col lg:flex-row lg:justify-center  gap-4 items-center xl:w-10/12 mx-auto  ">
         
           <img
@@ -31,7 +31,7 @@ const Banner = () => {
           data-aos="fade-left"
         >
           <h1 className="text-3xl text-center md:text-start md:text-4xl lg:text-6xl font-bold text-black">
-            <span className="text-[#5FBDFF]">Creative</span> <br /> Digital Agency
+            <span className="text-pink-500">Creative</span> <br /> Digital Agency
           </h1>
           <p className="py-6 text-center md:text-start">
             Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda

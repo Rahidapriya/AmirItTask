@@ -40,7 +40,7 @@ const Navbar = () => {
 
     const navLinks=<>
     <li className=" "><NavLink to="/" className={({ isActive, isPending }) =>
-                    isPending ? "pending " : isActive ? " text-purple-600 font-bold nav-link nav-link-ltr  px-6 hover:text-red " : "px-6 "
+                    isPending ? "pending " : isActive ? " text-pink-500 font-bold nav-link nav-link-ltr  px-6 hover:text-red " : "px-6 "
                   }>Home</NavLink></li>
     <li><NavLink to="/aboutus" className={({ isActive, isPending }) =>
                     isPending ? "pending" : isActive ? "text-purple-600 font-bold nav-link nav-link-ltr  px-6  underline-offset-8  hover:text-red   " : "px-6 "
@@ -92,7 +92,7 @@ const Navbar = () => {
               <div className="flex gap-16">
                <div className="flex  items-center ">
                
-              <div className="  text-3xl font-bold text-black ">megaone</div>
+              <div className="  text-3xl font-bold text-black font-sans ">Megaone</div>
                </div>
               <div className="flex-none hidden lg:block">
                 <ul className="flex gap-3">
@@ -100,7 +100,7 @@ const Navbar = () => {
                 </ul>
               </div>
               <div className="hidden lg:flex">
-              <button className="lg:px-2 xl:px-4 py-2   border-2 border-purple-700 example_d ">Get A Quotes</button>
+              <button className="lg:px-2 xl:px-4 py-2   border-2 border-pink-400 example_d ">Get A Quotes</button>
               </div>
               <div>
                 <ul className="hidden lg:flex gap-2  font-[20px] icon">
@@ -115,45 +115,7 @@ const Navbar = () => {
               </div>
              
      
-        <div className="dropdown dropdown-end">
-  {
-   
-    <ul tabIndex={0} className="dropdown-content z-[1]  p-2 shadow  rounded-box lg:w-72 lg:h-72 border-2 bg-pink-50" style={{ borderColor: '#D52B5C' }}>
-
-      {/*  */}
-    <div className="flex flex-col items-center justify-center mb-6">
-    <div>
-   
-    </div>
       
-     
-      
-    </div>
-      {/*  */}
-      <hr className="font-bold mb-4"/>
-      <div className="ml-4">
-      <Link to='/userdashboard'>Dashboard</Link>
-      </div>
-      
-        
-    <div className="flex items-center ">
-    
-   <div>
-   <CiLogin className="text-xl"></CiLogin>
-   </div>
-    </div>
-     
-    </ul>
-  }
-</div>
-        
-             
-            
-              <div className="ml-5">
-  <label className="swap swap-rotate">
-  
-</label>
-  </div>
            
             </div>
           </div>
@@ -164,7 +126,7 @@ const Navbar = () => {
             aria-label="close sidebar"
             className="drawer-overlay"
           ></label>
-          <ul className=" flex flex-col items-start w-80 min-h-full bg-base-200">
+          <ul className=" flex flex-col items-start w-80 min-h-full text-[16px] leading-10 pt-10 bg-base-200">
             {navLinks}
           
           </ul>
