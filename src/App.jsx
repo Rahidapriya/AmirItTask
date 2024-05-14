@@ -10,7 +10,8 @@ function App() {
  
 
   return (
-    <div className='info overflow-hidden'>
+    <div className=' overflow-hidden '>
+      
       {/* <div className='text-3xl bg-red-400 text-center'>
       <h1>React with Tailwind</h1>
       </div> */}

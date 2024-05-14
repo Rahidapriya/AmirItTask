@@ -13,7 +13,7 @@ import './navbar.css'
 
 const Navbar = () => {
   
-  const [isScrolled, setIsScrolled] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(true);
 
   useEffect(() => {
  
@@ -35,8 +35,8 @@ const Navbar = () => {
   };
  
 
-  const containerClass = isScrolled ? "py-3" : ""; 
-  const navbarClass = isScrolled ? "fixed top-0 left-0 right-0  shadow-md" : "";
+  const scrollbg = isScrolled ? "bg-white shadow-md " : "bg-[#96EFFF]";
+  // const navbarClass = isScrolled ? "sticky top-0 " : "";
 
     const navLinks=<>
     <li className=" "><NavLink to="/" className={({ isActive, isPending }) =>
@@ -60,13 +60,13 @@ const Navbar = () => {
     
     </>
     return (
-      <div className=" z-50  ">
-        <div className={`drawer z-30 ${containerClass} `}>
-      <div className={`drawer z-30 py-3 ${navbarClass}`}>
+      <div className=" z-50  mt-0">
+        <div className={`drawer z-30  `}>
+      <div className={`drawer z-30 py-3 sticky ${isScrolled ? 'top-0' : 'top-20'}`}>
       <div className="drawer z-30  fixed">
         <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content flex flex-col">
-          <div className={` shadow-md w-full `}>
+          <div className={` w-full ${scrollbg} transition   duration-1000 `}>
             <div className="max-w-[1400px] mx-auto navbar">
               <div className="flex-none lg:hidden">
                 <label
@@ -92,7 +92,7 @@ const Navbar = () => {
               <div className="flex gap-16">
                <div className="flex  items-center ">
                
-              <div className="  text-3xl font-bold text-red-600 ">megaone</div>
+              <div className="  text-3xl font-bold text-black ">megaone</div>
                </div>
               <div className="flex-none hidden lg:block">
                 <ul className="flex gap-3">
@@ -100,7 +100,7 @@ const Navbar = () => {
                 </ul>
               </div>
               <div className="hidden lg:flex">
-              <button className="px-4 py-2   border-2 example_d ">Get A Quotes</button>
+              <button className="lg:px-2 xl:px-4 py-2   border-2 border-purple-700 example_d ">Get A Quotes</button>
               </div>
               <div>
                 <ul className="hidden lg:flex gap-2  font-[20px] icon">
