@@ -35,7 +35,7 @@ const Navbar = () => {
   };
  
 
-  const scrollbg = isScrolled ? "bg-white shadow-md " : "bg-[#96EFFF]";
+  const scrollbg = isScrolled ? " shadow-md top-0 bg-[#96EFFF]" : "bg-[#96EFFF] ";
   // const navbarClass = isScrolled ? "sticky top-0 " : "";
 
     const navLinks=<>
@@ -62,8 +62,8 @@ const Navbar = () => {
     return (
       <div className=" z-50  mt-0">
         <div className={`drawer z-30  `}>
-      <div className={`drawer z-30 py-3 sticky ${isScrolled ? 'top-0' : 'top-20'}`}>
-      <div className="drawer z-30  fixed">
+      <div className={`drawer z-30 py-3 sticky bg-blue-600 `}>
+      <div className="drawer z-30 ${scrollbg} fixed">
         <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content flex flex-col">
           <div className={` w-full ${scrollbg} transition   duration-1000 `}>
@@ -89,24 +89,24 @@ const Navbar = () => {
                   </svg>
                 </label>
               </div>
-              <div className="flex gap-16">
+              <div className="flex lg:gap-2 xl:gap-16">
                <div className="flex  items-center ">
                
-              <div className="  text-3xl font-bold text-black font-sans ">Megaone</div>
+              <div className=" text-3xl lg:text-2xl xl:text-3xl font-bold text-black font-sans ">Megaone</div>
                </div>
               <div className="flex-none hidden lg:block">
-                <ul className="flex gap-3">
+                <ul className="flex lg:gap-0 xl:gap-3 lg:text-[12px] xl:text-[16px]">
                   {navLinks}
                 </ul>
               </div>
               <div className="hidden lg:flex">
-              <button className="lg:px-2 xl:px-4 py-2   border-2 border-pink-400 example_d ">Get A Quotes</button>
+              <button className="lg:px-2 xl:px-4 py-2 text-[16px] lg:text-[12px] xl:text-[16px]   border-2 border-pink-400 example_d ">Get A Quotes</button>
               </div>
               <div>
                 <ul className="hidden lg:flex gap-2  font-[20px] icon">
-                  <li className="transition duration-300 hover:-translate-y-1  text-purple-700 font-medium bg-white rounded-full p-2"><BiLogoFacebook></BiLogoFacebook></li>
-                  <li className="transition duration-300 hover:-translate-y-1 text-purple-700 font-medium bg-white rounded-full p-2">< FaInstagram></FaInstagram></li>
-                  <li className="transition duration-300 hover:-translate-y-1 text-purple-700 font-medium bg-white rounded-full p-2"><SlSocialTwitter ></SlSocialTwitter></li>
+                  <li className="transition duration-500 hover:-translate-y-1 hover:text-white  hover:bg-pink-400 text-purple-700 font-medium bg-white rounded-full p-2"><BiLogoFacebook></BiLogoFacebook></li>
+                  <li className="transition duration-500 hover:-translate-y-1 hover:text-white  hover:bg-pink-400 text-purple-700 font-medium bg-white rounded-full p-2">< FaInstagram></FaInstagram></li>
+                  <li className="transition duration-500 hover:-translate-y-1 hover:text-white  hover:bg-pink-400 text-purple-700 font-medium bg-white rounded-full p-2"><SlSocialTwitter ></SlSocialTwitter></li>
                 </ul>
               </div>
               </div>

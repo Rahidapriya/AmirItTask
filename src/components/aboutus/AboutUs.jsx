@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import about from '../../assets/about.png'
 import { TypeAnimation } from 'react-type-animation';
-// import './aboutus.js'
-import './about.css'
+
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 const AboutUs = () => {

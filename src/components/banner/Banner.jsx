@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import ban4 from "../../assets/banner33.png";
 import "./banner.css";
-import "./ScrollDown.css";
+
 import { FaLongArrowAltDown } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -38,7 +38,7 @@ const Banner = () => {
             excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
             a id nisi.
           </p>
-          <button className="border-2  border-[#5FBDFF]  bg-[#7B66FF] transition duration-300 hover:-translate-y-1 hover:bg-[#5FBDFF] hover:text-black rounded-full px-4 py-2 md:w-3/12 w-1/2 text-white ">
+          <button className="border-2  border-[#5FBDFF]  bg-[#7B66FF] transition duration-300 hover:-translate-y-1 hover:bg-[#5FBDFF] hover:text-black rounded-full px-4 py-2  md:w-4/12 lg:w-3/12 w-1/2 text-white ">
             Learn More
           </button>
         </div>
