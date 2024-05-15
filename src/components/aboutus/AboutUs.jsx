@@ -12,8 +12,8 @@ const AboutUs = () => {
     return (
        <div className='next-section '>
          <div className="">
-            <div className="hero w-10/12  md:w-8/12 mx-auto  ">
-  <div className="flex flex-col lg:gap-10  lg:flex-row-reverse">
+            <div className="hero w-10/12  md:w-8/12 lg:w-10/12 xl:w-8/12 mx-auto  ">
+  <div className="flex flex-col lg:gap-10 items-center justify-center  lg:flex-row-reverse">
     <img src={about} className="lg:w-1/2 " data-aos="fade-right" />
     <div className='mt-20 lg:w-1/2' data-aos="fade-left">
         <h3 className='text-[14px] lg:text-[20px] font-bold mb-4'>We are megaone company</h3>

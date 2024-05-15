@@ -35,7 +35,7 @@ const Navbar = () => {
   };
  
 
-  const scrollbg = isScrolled ? " shadow-md top-0 bg-[#96EFFF]" : "bg-[#96EFFF] ";
+  const scrollbg = isScrolled ? " shadow-md top-0 bg-white" : "bg-[#96EFFF] ";
   // const navbarClass = isScrolled ? "sticky top-0 " : "";
 
     const navLinks=<>
@@ -62,8 +62,8 @@ const Navbar = () => {
     return (
       <div className=" z-50  mt-0">
         <div className={`drawer z-30  `}>
-      <div className={`drawer z-30 py-3 sticky bg-blue-600 `}>
-      <div className="drawer z-30 ${scrollbg} fixed">
+      <div className={`drawer z-30 py-3 sticky  `}>
+      <div className={`drawer z-30 ${scrollbg} fixed`}>
         <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content flex flex-col">
           <div className={` w-full ${scrollbg} transition   duration-1000 `}>
@@ -89,13 +89,13 @@ const Navbar = () => {
                   </svg>
                 </label>
               </div>
-              <div className="flex lg:gap-2 xl:gap-16">
+              <div className="flex items-center justify-center lg:gap-6 xl:gap-16 ">
                <div className="flex  items-center ">
                
-              <div className=" text-3xl lg:text-2xl xl:text-3xl font-bold text-black font-sans ">Megaone</div>
+              <div className=" text-3xl lg:text-2xl xl:text-3xl font-bold text-black font-sans ">Megaone </div>
                </div>
               <div className="flex-none hidden lg:block">
-                <ul className="flex lg:gap-0 xl:gap-3 lg:text-[12px] xl:text-[16px]">
+                <ul className="flex lg:gap-0 xl:gap-3 lg:text-[12px] xl:text-[16px]  xxl:text-[16px]">
                   {navLinks}
                 </ul>
               </div>

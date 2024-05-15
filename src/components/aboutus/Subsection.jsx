@@ -6,7 +6,7 @@ import { PiNotePencilBold } from "react-icons/pi";
 // import './subsection.css'
 const Subsection = () => {
     return (
-        <div className='w-8/12 mx-auto text-center my-28 '>
+        <div className='w-8/12 lg:w-10/12 xl:w-8/12 mx-auto text-center my-28 '>
            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center justify-center font-[20px] gap-10 text-black'>
            <div className='flex flex-col items-center justify-center'>
            <FaFolderOpen className='bg-pink-500 mb-5 hover:bg-white hover:text-black hover:border-4 transition duration-300  hover:border-pink-500  text-white h-28 w-28  p-9 rounded-full '></FaFolderOpen>
